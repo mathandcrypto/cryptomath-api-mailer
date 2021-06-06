@@ -1,6 +1,8 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { MailerService } from '@nestjs-modules/mailer';
 import { MailConfigService } from '@config/mail/config.service';
+import { ProjectConfigService } from '@config/project/config.service';
+import { getCurrentYear } from '@common/helpers/date.helper';
 
 @Injectable()
 export class MailService {
@@ -9,6 +11,7 @@ export class MailService {
   constructor(
     private readonly mailerService: MailerService,
     private readonly mailConfigService: MailConfigService,
+    private readonly projectConfigService: ProjectConfigService,
   ) {}
 
   async sendRegisterNotify(
@@ -24,9 +27,13 @@ export class MailService {
         subject: this.mailConfigService.registerSubject,
         template: 'register',
         context: {
-          user_id: userId,
+          project_link: this.projectConfigService.url,
           name: displayName,
-          confirm_code: confirmCode,
+          confirm_link: this.projectConfigService.getRegisterConfirmUrl(
+            userId,
+            confirmCode,
+          ),
+          year: getCurrentYear(),
         },
       });
 

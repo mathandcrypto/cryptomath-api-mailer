@@ -12,13 +12,14 @@ export class MailController {
 
   @MessagePattern('send-register-notify')
   async sendRegisterNotify(
-    @Payload() { email, userId, displayName, confirmCode }: SendRegisterNotifyRequest,
+    @Payload()
+    { email, userId, displayName, confirmCode }: SendRegisterNotifyRequest,
   ): Promise<SendRegisterNotifyResponse> {
     const [isMailSent, messageId] = await this.mailService.sendRegisterNotify(
       email,
       userId,
       displayName,
-      confirmCode
+      confirmCode,
     );
 
     return { isMailSent, messageId };
