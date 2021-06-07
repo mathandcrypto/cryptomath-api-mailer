@@ -20,6 +20,8 @@ async function bootstrap() {
     },
   });
 
+  await app.init();
+
   app.startAllMicroservices(() =>
     console.log(`User microservice is listening on ${rmqUrl}`),
   );

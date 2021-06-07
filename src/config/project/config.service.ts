@@ -15,7 +15,7 @@ export class ProjectConfigService {
 
   getRegisterConfirmUrl(userId: number, confirmCode: string) {
     return `${this.url}${this.registerConfirmLink
-      .replace('{userId}', this.url)
+      .replace('{userId}', userId.toString())
       .replace('{confirmCode}', confirmCode)}`;
   }
 }

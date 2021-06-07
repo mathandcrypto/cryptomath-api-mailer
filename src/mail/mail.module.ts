@@ -28,7 +28,7 @@ import { join } from 'path';
             },
           },
           template: {
-            dir: join(process.cwd(), 'src/templates/'),
+            dir: join(process.cwd(), 'src/templates'),
             adapter: new HandlebarsAdapter(),
             options: {
               strict: true,

@@ -25,7 +25,7 @@ export class MailService {
         from: this.mailConfigService.registerFrom,
         to: email,
         subject: this.mailConfigService.registerSubject,
-        template: 'register',
+        template: './register.hbs',
         context: {
           project_link: this.projectConfigService.url,
           name: displayName,
@@ -36,7 +36,6 @@ export class MailService {
           year: getCurrentYear(),
         },
       });
-
       return [true, messageId];
     } catch (error) {
       this.logger.error(error);
