@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to the CryptoMath project!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+    <style>
+        table, td, div, h1, p, button {font-family:'Ubuntu', sans-serif;}
+        button {cursor:pointer;border-style:none;}
+        a {text-decoration:none;}
+    </style>
+</head>
+<body style="margin:0;padding:0;">
+    <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#F2F3F7;">
+        <tr>
+            <td style="padding:20px;" align="center">
+                <!--    MAIN TABLE  -->
+                <table role="presentation" style="width:602px;border-collapse:collapse;border-spacing:0;text-align:left;">
+                    <!--    LOGO    -->
+                    <tr>
+                        <td style="padding:0;" align="center">
+                            <table role="presentation" style="width:80%;border-collapse:collapse;border:0;border-spacing:0;">
+                                <tr>
+                                    <td style="padding:0;width:95px;">
+                                        <a href="{{ project_link }}" target="_blank">
+                                            <img
+                                              src="https://cryptomath-marketing-images.s3.eu-central-1.amazonaws.com/cryptomath_logo.png"
+                                              width="75"
+                                              height="75"
+                                            />
+                                        </a>
+                                    </td>
+                                    <td style="padding:0;font-size:60px;font-weight:500;line-height:60px;">
+                                        <a href="{{ project_link }}" target="_blank" style="color:rgba(0, 0, 0, 0.87);">
+                                            CryptoMath
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--    CONTENT -->
+                    <tr>
+                        <td style="padding:20px 0;">
+                            <table role="presentation" style="width:100%;border-collapse:collapse;border:0 solid #fff;border-spacing:0;border-radius:10px;background:#fff;outline:none;">
+                                <tr>
+                                    <td style="overflow:hidden;border-radius:10px;">
+                                        <img src="https://cryptomath-marketing-images.s3.eu-central-1.amazonaws.com/math_board.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:16px;font-size:34px;font-weight:500;line-height:40px;color:rgba(0, 0, 0, 0.87);">
+                                        Welcome to the CryptoMath project
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:4px 16px 16px;font-size:20px;font-weight:500;line-height:32px;color:rgba(0,0,0,.6);">
+                                        Hi, {{ name }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 16px 16px;font-size:14px;line-height:22px;color:rgba(0,0,0,.6);">
+                                        Thanks for signing up for CryptoMath. We're glad you're here! Please confirm your email address by clicking the link below.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 16px;" align="center">
+                                        <a href="{{ confirm_link }}" target="_blank">
+                                            <button type="button" style="height:36px;min-width:64px;padding:0 16px;border-radius:4px;background-color:#424242;font-size:14px;font-weight:500;text-transform:uppercase;color:#fff;cursor:pointer;">
+                                                Confirm email
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 16px 16px;font-size:14px;line-height:22px;color:rgba(0,0,0,.6);">
+                                        Confirmation link: <a href="{{ confirm_link }}" target="_blank" style="color:#0288D1;font-weight:500;">{{ confirm_link }}</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:16px 16px 16px;">
+                                        <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                            <tr>
+                                                <td style="padding:0;font-size:14px;line-height:22px;font-weight:700;color:rgba(0,0,0,.6);">
+                                                    Best wishes,
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:0;font-size:14px;line-height:22px;font-weight:700;color:rgba(0,0,0,.6);">
+                                                    The CryptoMath Team
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 16px;font-size:12px;line-height:20px;font-style:italic;color:rgba(0,0,0,.6);" align="center">
+                                        Please do not reply to this email.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--    FOOTER  -->
+                    <tr>
+                        <td style="padding:0;">
+                            <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                <tr>
+                                    <td style="padding:0 0 8px;" align="center">
+                                        <table role="presentation" style="border-collapse:collapse;border:0;border-spacing:0;">
+                                            <tr>
+                                                <td style="padding:0;width:68px;">
+                                                    <a href="https://twitter.com/mathandcrypto" target="_blank">
+                                                        <img src="https://cryptomath-marketing-images.s3.eu-central-1.amazonaws.com/twitter.png" width="48" height="48">
+                                                    </a>
+                                                </td>
+                                                <td style="padding:0;width:68px;">
+                                                    <a href="https://www.facebook.com/mathcrypto" target="_blank">
+                                                        <img src="https://cryptomath-marketing-images.s3.eu-central-1.amazonaws.com/facebook.png" width="48" height="48">
+                                                    </a>
+                                                </td>
+                                                <td style="padding:0;width:68px;">
+                                                    <a href="https://telegram.me/mathcrypto" target="_blank">
+                                                        <img src="https://cryptomath-marketing-images.s3.eu-central-1.amazonaws.com/telegram.png" width="48" height="48">
+                                                    </a>
+                                                </td>
+                                                <td style="padding:0;width:48px;">
+                                                    <a href="https://api.cryptomath.xyz/docs" target="_blank">
+                                                        <img src="https://cryptomath-marketing-images.s3.eu-central-1.amazonaws.com/api.png" width="48" height="48">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 8px;font-size:14px;line-height:22px;color:rgba(0, 0, 0, 0.87);" align="center">
+                                        Sent by <a href="{{ project_link }}" target="_blank" style="color:#0277BD;font-weight:500;">CryptoMath</a>.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0;font-size:14px;line-height:22px;font-style:italic;color:rgba(0, 0, 0, 0.87);" align="center">
+                                        Copyright © {{ year }} CryptoMath, All Rights Reserved.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
