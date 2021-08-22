@@ -3,7 +3,7 @@ import { MessagePattern, Payload } from '@nestjs/microservices';
 import {
   SendRegisterNotifyRequest,
   SendRegisterNotifyResponse,
-} from 'cryptomath-api-message-types';
+} from '@cryptomath/cryptomath-api-message-types';
 import { MailService } from './mail.service';
 
 @Controller()
