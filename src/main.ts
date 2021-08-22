@@ -1,10 +1,12 @@
 import { NestFactory } from '@nestjs/core';
+import { Logger } from '@nestjs/common';
 import { AppModule } from './app.module';
 import { AppConfigService } from '@config/app/config.service';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  const logger = new Logger('bootstrap');
   const appConfigService = app.get(AppConfigService);
 
   const { rmqUrl, rmqQueueName } = appConfigService;
@@ -23,7 +25,7 @@ async function bootstrap() {
   await app.init();
 
   app.startAllMicroservices(() =>
-    console.log(`User microservice is listening on ${rmqUrl}`),
+    logger.log(`Mailer microservice is listening on ${rmqUrl}`),
   );
 }
 bootstrap();

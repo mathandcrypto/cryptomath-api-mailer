@@ -1,6 +1,6 @@
 {
   "name": "cryptomath-api-mailer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "author": "",
   "private": true,
@@ -21,6 +21,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@cryptomath/cryptomath-api-message-types": "^1.0.1",
     "@nestjs-modules/mailer": "^1.6.0",
     "@nestjs/common": "^7.5.1",
     "@nestjs/config": "^0.6.3",
@@ -29,7 +30,6 @@
     "@nestjs/platform-express": "^7.5.1",
     "amqp-connection-manager": "^3.2.2",
     "amqplib": "^0.8.0",
-    "cryptomath-api-message-types": "github:mathandcrypto/cryptomath-api-message-types",
     "handlebars": "^4.7.7",
     "joi": "^17.4.0",
     "nodemailer": "^6.6.0",
